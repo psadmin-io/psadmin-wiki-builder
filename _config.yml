@@ -5,6 +5,7 @@ docs_github: "https://github.com/psadmin-io/psadmin-wiki"
 exclude: [bin, CNAME, Gemfile, Gemfile.lock, README.md, slate, vendor, '*.erb']
 markdown: kramdown
 permalink: :title
+destination: psadmin-wiki/_site
 syntax-highlighting:
   enabled: true
 kramdown:
