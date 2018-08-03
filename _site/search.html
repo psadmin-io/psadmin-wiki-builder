@@ -1,0 +1,452 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> - psadmin.io Wiki</title>
+<link rel="stylesheet" href="/assets/stylesheets/main.css">
+<link rel="alternate" type="application/rss+xml" title="psadmin.io Wiki Build Updates" href="http://wiki.psadmin.io/feed.build-env-updates.xml">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" defer></script>
+<script src="/assets/javascripts/site.js" type="text/javascript" charset="utf-8" defer></script>
+<script src="/assets/javascripts/main.js" type="text/javascript" charset="utf-8" defer></script>
+<script src="/assets/javascripts/prism.js" type="text/javascript" charset="utf-8" defer></script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64254497-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header class="top">
+  <div class="logo">
+    
+  </div>
+  <div class="row topbar">
+    <h1 id="logo" class="logo">
+  <img alt="psadmin.io logo" src="/images/psadmin_io_white_1440.png" width="200">
+</h1>
+    <nav>
+      <ul id="navigation" class="navigation">
+        <li><a href="http://psadmin.io">Home</a></li>
+        <li><a href="http://psadmin.io/blog">Blog</a></li>
+        <li><a href="http://psadmin.io/category/podcast">Podcast</a></li>
+        <li><a href="http://psadmin.io/community">Community</a></li>
+        <li><a href="http://psadmin.io/courses">Courses</a></li>
+        <li><a href="http://psadmin.io/conference">Conference</a></li>
+        <li><a href="http://github.com/psadmin-io">Code</a></li>
+        <li><a href="/">Wiki</a></li>
+        <li class="toggle"><button type="button" id="toggle-menu" class="button--teal">Menu</button></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+      <div id="content" class="row">
+
+        <div id="sidebar" class="sidebar">
+  <div>
+    <!-- <h2>Search</h2> -->
+    <form action="/search.html" method="get" class="searchbox">
+      <input type="text" id="search-box" name="query" placeholder="Search"  class="searchbox-input">
+    </form>
+  </div>
+
+  <section class="sidebar-navigation">
+    <nav>
+      <h3>Getting Started</h3>
+      <ul>
+        
+        <li><a href="/posts/getting_started/mos_searching/">Searching in My Oracle Support</a></li>
+        
+        <li><a href="/posts/getting_started/tools/">Software and Tools</a></li>
+        
+      </ul>
+
+      <h3>PeopleTools</h3>
+      <ul>
+        <li class="is-overview"><a href="/posts/peopletools/">Overview</a></li>
+        
+        <li><a href="/posts/peopletools/resend_content_sql/">Mass Resend Reports</a></li>
+        
+        <li><a href="/posts/peopletools/search_callback_user/">Search Framework Call Back User</a></li>
+        
+      </ul>
+
+      <h3>Database</h3>
+      <ul>
+        <li class="is-overview"><a href="/posts/database/">Overview</a></li>
+        
+      </ul>
+
+      <h3>Middleware</h3>
+      <ul>
+        <li class="is-overview"><a href="/posts/middleware/">Overview</a></li>
+        
+        <li><a href="/posts/middleware/elastichq/">ElasticHQ</a></li>
+        
+      </ul>
+
+      <h3>Cloud Architecture</h3>
+      <ul>
+        <li class="is-overview"><a href="/posts/pca/">Overview</a></li>
+        
+        <li><a href="/posts/pca/pi_passwords/">PeopleSoft Image Passwords</a></li>
+        
+        <li><a href="/posts/pca/sample_yaml/">Sample psft_customizations.yaml</a></li>
+        
+        <li><a href="/posts/pca/custom_facts/">Custom Facts</a></li>
+        
+        <li><a href="/posts/pca/common_dpk_errors/">Common DPK Errors</a></li>
+        
+        <li><a href="/posts/pca/cleanup/">DPK Cleanup Process</a></li>
+        
+      </ul>
+
+      <h3>Server Administration</h3>
+      <ul>
+        <li class="is-overview"><a href="/posts/admin/">Overview</a></li>
+        
+        <li><a href="/posts/admin/wl_demo_certs/">WebLogic Demo Certificates</a></li>
+        
+        <li><a href="/posts/admin/windows_services/">Windows Services</a></li>
+        
+      </ul>
+
+      <h3>Development</h3>
+      <ul>
+        <li class="is-overview"><a href="/posts/development/">Overview</a></li>
+        
+        <li><a href="/posts/development/custom_change_package/">Working with a Custom Change Package</a></li>
+        
+        <li><a href="/posts/development/event_mapping_links/">Event Mapping Links</a></li>
+        
+      </ul>
+
+    </nav>
+  </section>
+
+  <section class="sidebar-notice">
+    <p>This documentation site is open source.
+      The <a href="https://github.com/psadmin-io/psadmin-wiki">README in our Git repository</a> explains how to contribute.</p>
+    <p>Check out the <a href="https://github.com/psadmin-io/psadmin-wiki/blob/master/STYLE.md">Style Guide</a> for tips on working with Markdown and how to make the wiki pages look great.</p>
+    <p>View the wiki's <a href="/code_of_conduct/">Code of Conduct</a></p>
+  </section>
+
+</div><!-- /#sidebar -->
+
+
+        <div class="search">
+          <div class="header-column">
+  <h2>Search Results</h2>
+  <ul id="search-results"></ul>
+</div>
+
+<script>
+  window.store = {
+    
+    
+      "404": {
+        "title": "",
+        "content": "              psadmin.io Wiki - 404 Page not found                                                                                                                                                Home              Blog              Pocast              Community              Courses              Code              Wiki                                                            404: Something's Missing          We're sorry! It seems like this page cannot be found.                                                                                                                    ",
+        "url": "/404"
+      }
+      
+      ,
+    
+    
+    
+      "code-of-conduct": {
+        "title": "Code of Conduct",
+        "content": "Contributor Covenant Code of ConductOur PledgeIn the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.Our StandardsExamples of behavior that contributes to creating a positive environment include:  Using welcoming and inclusive language  Being respectful of differing viewpoints and experiences  Gracefully accepting constructive criticism  Focusing on what is best for the community  Showing empathy towards other community membersExamples of unacceptable behavior by participants include:  The use of sexualized language or imagery and unwelcome sexual attention or advances  Trolling, insulting/derogatory comments, and personal or political attacks  Public or private harassment  Publishing others’ private information, such as a physical or electronic address, without explicit permission  Other conduct which could reasonably be considered inappropriate in a professional settingOur ResponsibilitiesProject maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.ScopeThis Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.EnforcementInstances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at dan@psdamin.io. The project team will review and investigate all complaints, and will respond in a way that it deems appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project’s leadership.AttributionThis Code of Conduct is adapted from the Contributor Covenant, version 1.4, available at http://contributor-covenant.org/version/1/4",
+        "url": "/code_of_conduct/"
+      }
+      
+      ,
+    
+    
+    
+      "style-guide": {
+        "title": "Style Guide",
+        "content": "psadmin.io Community Wiki Style Guide(Copied from the Travis CI documentation style guide - it’s realy good.)Markdown and structureHeadingsFor historical reasons, the top level heading in Jekyll markdown files is level 2 (##) not level 1 (#).We use ATX style headings, and do not use the optional closing hashes:## This is an H2### This is an H3#### This is an H4We do not use underline style headings:Do not use this style heading=============================ListsIf you have long lists you can wrap them into 2 (.column-2) or 3 (.column-3) columns using one of the follow CSS classes after your list item:* long list item 1* long list item 2{: .column-2 }TOCAdd a table of contents to a page with the following HTML snippet:&lt;div id=\"toc\"&gt;&lt;/div&gt;Beta featuresMark all beta features with a specially formatted note. Both the &gt; BETA andthe {: beta} are required.  BETA Awesome new feature that might not be enabled and is subject to change.GUIMake sure all references to items in a GUI match the case of the UI, and are marked with asterisks.LinksMake sure all links have titles:The [link][example1] in the text[example1]: http://www.example.com  \"Example URL\"orThe [link](http://www.example.com \"Example URL\") in the textCode InlineAll function names, filenames, etc should be marked with back-ticks.If you’re talking about applications or services, only the actual command should be marked as code, not the name of the service:  Start SQL*Plus by running sqlplus.Blockquotes / Notes / WarningsUse &gt; to indicate notes and warnings:&gt; Note this important info!Code blocksCode blocks should be fenced with triple back-ticks “```” and named according to prism.js for syntax highlighting.your code hereYou can also set the filename for a code block by adding a Kramdown attribute after it:This code is in .travis.ymlImagesAlways include text for configuration items. Screenshots and images should only be used to accompany the text description; never use only an image for documentation.",
+        "url": "/style_guide/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-admin": {
+        "title": "Server Administration",
+        "content": "This section is for articles on managing servers for PeopleSoft. Articles here are for working with Windows, Linux, etc.",
+        "url": "/posts/admin/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-pca-cleanup": {
+        "title": "DPK Cleanup Process",
+        "content": "DPK Cleanup ProcessThe DPK uses a process called “cleanup” to remove installed software and domains. The cleanup process uses Puppet to delete installed files and folders. You can run the cleanup process two ways:  The bootstrap script  Using puppet applyThe bootstrap scriptThe bootstrap scripts (psft-dpk-setup) has a parameter you can pass to remove installed software:8.55 DPK on Windows.\\psft-dpk-setup.ps1 --cleanup8.56 DPK on Windows.\\psft-dpk-setup.bat --cleanupLinux.\\psft-dpk-setup.sh --cleanupUsing puppet applyTo run the cleanup process with Puppet, you set the ensure: absent parameter in the defaults.yaml file. When you run puppet apply, Puppet will remove everything it knows about.Controlling the cleanup processIf there is software, domains or users you want to keep, you can use your psft_customizations.yaml file to keep things. For example, if you want to keep your old PS_HOME folder, copy the ps_home: hash to your psft_customizations.yaml file and add the remove: false to the hash:ps_home:  db_type:    \"%{hiera('db_platform')}\"  unicode_db: \"%{hiera('unicode_db')}\"  location:   \"%{hiera('ps_home_location')}\"  remove:     falseMany of the hashes in the psft_deployment.yaml and psft_unix_system.yamlsupport the remove: false setting.",
+        "url": "/posts/pca/cleanup/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-pca-common-dpk-errors": {
+        "title": "Common DPK Errors",
+        "content": "Here are some common DPK errors and how to resolve them.This platform is not supportedThis error can occur when running the bootstrap script (psft-dpk-setup) if the setup folder is in the wrong location. After downloading the DPK files, you need to extract the first .zip file. Make sure the setup folder from the first .zip file (and other files from the .zip file) are at the same directory as the remaining .zip files.If the setup folder is one level deeper (e.g, under PEOPLETOOLS-WIN-8.56.02_1of4\\setup) you will see this error..├── PEOPLETOOLS-WIN-8.56.02_1of4│   ├── setup│   └── readme.txt├── PT-DPK-WIN-8.56.02-1of2.zip├── PT-DPK-WIN-8.56.02-2of2.zip├── PTC-DPK-WIN8.56.02-1of1.zipTo resolve the error, move the setup folder (and other files in the directory) up one level..├── PT-DPK-WIN-8.56.02-1of2.zip├── PT-DPK-WIN-8.56.02-2of2.zip├── PTC-DPK-WIN8.56.02-1of1.zip├── readme.txt└── setupfound character that cannot start any token while scanning for the next tokenThis error will display during the Puppet catalog build. The catalog build is when Puppet is performing Hiera lookups. The error can result from two common causes:  The YAML file has a Tab character in it  A string with special characters is not quotedTo resolve the first issue, use your text editor to convert any Tab characters into spaces. For the second issue, make sure you use single quotes around passwords or any value that has special characters in it.",
+        "url": "/posts/pca/common_dpk_errors/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-development-custom-change-package": {
+        "title": "Working with a Custom Change Package",
+        "content": "Author: Andy DorfmanPrepare External ObjectsCreate DMS file  d:\\temp\\update_psstatus.dms      set log update_psstatus.log;  update PSSTATUS set LASTCHANGEDTTM = %CurrentDateTimeIn;      Application Designer portionCreate Custom File Code (PSTYPECODEDEFN)  Application Designer &gt; Tools &gt; Miscellaneous Definitions &gt; File Type Codes    FILEREFTYPECODE:    'CUSTOM_SCRIPTS'FILEREFPATH:        '%ps_cust_home%\\scripts'DESCRLONG:          'LBC PS_CUST_HOME\\scripts folder'      Create Custom Script File Reference  Application Designer &gt; New &gt; File Reference    File Name and Path: \"Click on ... to select a file `D:\\temp\\update_psstatus.dms`\"Binary:             'No'Database Platform:  'All'PeopleSoft Server:  'File Server'Operating System:   'All'        Application Designer &gt; File &gt; Save As    Save Name As:   'UPDATE_PSSTATUS_DMS'File Type Code: 'CUSTOM_SCRIPTS'        Click OK to save  Replace D:\\temp\\update_psstatus.dms with %FILEREFPATH%\\update_psstatus.dms  Click OK to save again      Click F7 to import File Reference Definition into the project    Application Designer &gt; File &gt; Save Project    Save Project Name As: 'LBC_IT0001'            Click OK to save    Application Designer &gt; Tools &gt; Project Properties    Description:    'Testing CUSTOM_SCRIPTS File References'Comments:       'Testing description'Change Project: 'Check'Update ID:      'LBC_IT0001'Add:         Click OK  Application Designer &gt; File &gt; Save All  Application Designer &gt; Upgrade Tab  Doube-Click on File References, Check Execute Flag  Application Designer &gt; File &gt; Save AllCreate Change Package  Application Designer &gt; Tools &gt; Create Change Package  Click OK    Export Directory:       'd:\\temp\\LBC_IT0001'File Reference Path:    'D:\\temp'Update ID:              'LBC_IT0001'Generate New Template:  'Check'        Application Designer &gt; Tools &gt; Finalize Change Package    Export Directory: 'd:\\temp\\lbc_it0001\\updlbc_it0001'        Click OKApply Change Package  Place d:\\temp\\LBC_IT0001\\updLBC_IT0001\\updLBC_IT0001.zip in CA’s download directory      Change Assistant &gt; Tools &gt; Apply Change Package &gt; Apply Automatically Without Compare &gt; Next &gt; Apply without using Change Impact Analyzer &gt; Next &gt; Select product line release &gt; Next &gt; Select target environment &gt; Next &gt; Select Host &gt; Next &gt; Provide Credentials &gt; Next &gt; Select download directory &gt; Next &gt; Select UPDLBC_IT0001 &gt; Next &gt; Next &gt; Validate Now (make sure psemagent is running) &gt; Begin Apply    Examine the log file for Deploy Files &gt; File Type Code: CUSTOM_SCRIPTS &gt; UPDATE_PSSTATUS_DMS  It looks like it’s finding only 1 file server under PS_HOME and deploying the file udpate_psstatus.dms only to that 1 location, most likely due to me selecting only ‘File Server’ during File Reference creation.  Nothing got transferred to PS_CUST_HOME  Examine the view Script for Execute File References &gt; Execute DMS &gt; UPDATE_PSSTATUS_DMS  It is executing update_psstatus.dms script from the staging directory",
+        "url": "/posts/development/custom_change_package/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-pca-custom-facts": {
+        "title": "Custom Facts",
+        "content": "You can easily deploy custom facts to your server for use with the DPK and Puppet. Facter has a number of built-in facts, like ::hostname, but we can use our own.facts.dUnder the C:\\ProgramData\\puppetlabs\\facter\\facts.d\\ folder, we can put YAML file with custom values.---ps_role:    providerregion:     devapp:        hrYou can save the file as facts.yaml.Hiera and Custom FactsIn your psft_customizations.yaml file, you can reference these facts. For example, if you wanted your PIA domains to include the region in the name, the YAML would look like this:pia_domain_list:  \"peoplesoft-%{::region}\":",
+        "url": "/posts/pca/custom_facts/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-database": {
+        "title": "Database",
+        "content": "This section is for articles on managing PeopleSoft databases. This includes Oracle, SQL Server and DB2 platforms.",
+        "url": "/posts/database/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-development": {
+        "title": "PeopleSoft Development",
+        "content": "This section is for articles on PeopleSoft development.",
+        "url": "/posts/development/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-middleware-elastichq": {
+        "title": "ElasticHQ",
+        "content": "If you want a utility to help you monitor your Elasticsearch nodes and clusters, ElasticHQ is a plugin that can give you a nice GUI.InstallationThere are two ways you can install ElasticHQ. If your Elasticsearch server has access to the Internet, you can install the plugin from the command line:cd $ES_HOME\\bin.\\plugin install royrusso/elasticsearch-HQ/v2.0.2  You need to use version 2.0.2 with the Elasticsearch 2.3.2 that ships with PeopleTools 8.55 and 8.56. The latest version of ElasticHQ is built for Elasticsearch 5.xTo manually install ElasticHQ:  Download version 2.0.2 from here  Copy the .zip (or .tar) file to your Elasticsearch server.  Extract the .zip file to $ES_HOME\\plugins\\hq  Restart Elasticsearch  Log into ElasticHQ at http://localhost:9200/_plugin/hq with the esadmin accountUsing ElasticHQElasticHQ is meant to give you a read-only view of the system. If you want to make changes, I’d recomment you use Elasticsearch’s REST API.To view a node, enter the URL into the box at the top and click ‘Connect’. If your node is part of a cluster, ElasticHQ will show the cluster’s nodes. You can view the size of indexes, the stats of each node, and the cluster stats as well.",
+        "url": "/posts/middleware/elastichq/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-development-event-mapping-links": {
+        "title": "Event Mapping Links",
+        "content": "A collection of links about Event MappingChris Malek on Event Mapping  Discovering Event MappingColton Fischer on Event Mapping  Blog posts about Event MappingSasank Vemana on Event Mapping  Blog posts about Event Mappingpsadmin.io on Event Mapping  Event Mapping Demo  Interview with Colton Fischer on Event Mapping  blog posts and podcast search  Reduce your customizations",
+        "url": "/posts/development/event_mapping_links/"
+      }
+      
+      ,
+    
+    
+    
+    
+    
+      "feed-xml": {
+        "title": "",
+        "content": "      psadmin.io Community WIki    PeopleSoft Administration Knowledge    https://wiki.psadmin.io      ",
+        "url": "/feed.xml"
+      }
+      
+      ,
+    
+    
+    
+      "": {
+        "title": "psadmin.io Community Wiki",
+        "content": "                          Welcome!        The Community Wiki is a place for PeopleSoft Administrators to share documentation on setting up new features, how they resolved issues, and anything else they would like to share.                          How to use the wiki        On the left are folder to group the various topics related to PeopleSoft Adminstration:                  PeopleTools: Looking to configure a feature that is available under Main Menu > PeopleTools? Look under here.          Database: Articles about managing or working the the database.          Middleware: Want to read about Tuxedo, Java, WebLogic, COBOL. The middleware folder is for all supporting software that runs PeopleSoft          PeopleSoft Cloud Architecture: This area include Deployment Packages, Puppet, or anything about automation.          Server Administration: Articles about working with Windows, Linux, AIX or other server management topics.                            How to contribute        Any one can contribute to the Communtiy Wiki. To make a contribution or edit, you'll need Git installed. It's also recommended you use a good text editor (like SublimeText, VS Code, Notepad++, vi) and are familiar with Markdown formatting.              ",
+        "url": "/"
+      }
+      
+      ,
+    
+    
+    
+      "assets-stylesheets-main-css": {
+        "title": "",
+        "content": "@import url(\"https://necolas.github.io/normalize.css/3.0.2/normalize.css\")@import url('https://fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400%2C700%2C900%2C100italic%2C300italic%2C400italic%2C700italic%2C900italic')@import url(\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600\")@import \"_vars\"@import \"_mixins\"@import \"foundation/_settings\"@import \"foundation/components/_grid\"@import \"prism\"@import \"_base\"@import \"_utils\"@import \"_top\"@import \"_footer\"@import \"_layout\"@import \"_search\"@import \"_intro\"@import \"_nodocs\"@import \"_sidebar\"",
+        "url": "/assets/stylesheets/main.css"
+      }
+      
+      ,
+    
+    
+    
+      "posts-middleware": {
+        "title": "Middleware",
+        "content": "This section is for articles on WebLogic, Tuxedo, Java and other software supporting PeopleSoft.",
+        "url": "/posts/middleware/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-getting-started-mos-searching": {
+        "title": "Searching in My Oracle Support",
+        "content": "Some tips when searching in My Oracle Support to help you find relevant documents.Platform CodesUse the platform codes to narrow down your search. For example, E-RD will search for Report Distribution documents related to PeopleSoft Enterprise.Here is a list some common codes to use when searching  E-PIA: PIA related issue  E-ES: Elasticsearch  E-PTSF: PeopleSoft Search Framework (ES, SES and the PeopleSoft side)  E-SSL: SSL and PeopleSoftIf you look at the beginning of a document title, you can pick up on common platform codes and use those in the future to help narrow your search.",
+        "url": "/posts/getting_started/mos_searching/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-pca": {
+        "title": "Cloud Architecture",
+        "content": "The PeopleSoft Cloud Architecture section includes the following technologies:  Deployment Packages  Automated Configuration Management  Puppet/Facter/Hiera  Anything related deploying software and managing server configuration",
+        "url": "/posts/pca/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-peopletools": {
+        "title": "PeopleTools",
+        "content": "This section is for articles on PeopleTools features. This includes features on the PeopleTools menu like:  Security  Search Framework  Integration Broker  Web Profile  Performance Monitor",
+        "url": "/posts/peopletools/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-pca-pi-passwords": {
+        "title": "PeopleSoft Image Passwords",
+        "content": "PeopleSoft Image PasswordsWith PeopleTools 8.56, there are some new passwords you create when installing a PeopleSoft Image. Each password has different complexity requirements, so it can be confusing when creating demo passwords. Here is a sample file of passwords to use:The admin_pwd password is a new field for 8.56. This password is for the SYS and SYSTEM account in Oracle Database. The complexity requriements are strange; a special character is required but the special character can only be _ - or #.",
+        "url": "/posts/pca/pi_passwords/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-peopletools-resend-content-sql": {
+        "title": "Mass Resend Reports",
+        "content": "David Kurtz has a great post on resending reports in a “Not Posted” status. The SQL he provides works on Oracle. The SQL below will do the same on MS SQL Server.DECLARE @PRCSINSTC INT;DECLARE PROCESSINSTANCE_CURSOR CURSOR FOR    SELECT PRCSINSTANCE    FROM   PSPRCSRQST    WHERE  DISTSTATUS = 4 --THAT ARE NOT POSTED    AND    RUNSTATUS = 9;  --SUCCESSFUL PROCESSESOPEN PROCESSINSTANCE_CURSORFETCH NEXT FROM PROCESSINSTANCE_CURSOR INTO @PRCSINSTC    WHILE @@FETCH_STATUS = 0    BEGIN        PRINT @PRCSINSTC         UPDATE PSPRCSRQST         SET    DISTSTATUS = '7'         WHERE  PRCSINSTANCE = @PRCSINSTC;         UPDATE PSPRCSQUE         SET    DISTSTATUS = '7'         WHERE  PRCSINSTANCE = @PRCSINSTC;         UPDATE PS_CDM_LIST         SET    DISTSTATUS   = '8'         ,      TRANSFERINSTANCE = 0         WHERE  PRCSINSTANCE = @PRCSINSTC         AND    DISTSTATUS   &lt;&gt; '5'; --POSTED        FETCH NEXT FROM PROCESSINSTANCE_CURSOR INTO @PRCSINSTC    END;CLOSE PROCESSINSTANCE_CURSOR;DEALLOCATE PROCESSINSTANCE_CURSOR;GO",
+        "url": "/posts/peopletools/resend_content_sql/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-pca-sample-yaml": {
+        "title": "Sample psft_customizations.yaml",
+        "content": "Sample psft_customizations.yaml FileBelow is a sample psft_customizations.yaml file to give you an idea of how to define configuration for the DPK.",
+        "url": "/posts/pca/sample_yaml/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-peopletools-search-callback-user": {
+        "title": "Search Framework Call Back User",
+        "content": "In Oracle Support and in PeopleBooks, the Search Framework call back user is said to require the PeopleSoft Administrator role. Given the power that role gives to a user, this breaks many security policies. Thankfull, this role isn’t required for the call back user. Instead follow these guidelines for security with the call back user:  Set PTPT3100 as the Primary, Process Profile, and Row Security Permission List  Assign the following roles:          PeopleSoft User      Search Administrator      Search Developer      Search Query Administrator      Search Server      Search-xxx      For your application, the Search-xxx Role will give access to the Search Catetories you want to deploy. These roles will change depending on your application and configuration.",
+        "url": "/posts/peopletools/search_callback_user/"
+      }
+      
+      ,
+    
+    
+    
+      "search": {
+        "title": "",
+        "content": "  Search Results  ",
+        "url": "/search"
+      }
+      
+      ,
+    
+    
+    
+      "posts-getting-started-tools": {
+        "title": "Software and Tools",
+        "content": "This page is a collection of different tools that I use to make a PS Admin's job easier. Some of these are freeware or open source while others are worth paying for.## Security*   [Password Safe][1] - Free Password Safe offers excellent security for all the passwords you manage. You could memorize your passwords (ugly), keep them on a spreadsheet (bad), or use Password Safe to keep all your passwords safely encrypted. The only password you need to remember is the safe's master password. Once you open the safe, just double-click on the password you want to use and paste password. You don't even need to know the underlying passwords! Password Safe also has a good password generator feature. You can set up the password rules and let it generate them for you.*   [Keystore Explorer][2] - Free Keystore Explorer is a great tool for working with java keystore files, like `pskey`. The `pskeymanager` wrapper only offers a subset of functions for the Java `keytool` program. Keystore Explorer offers the same features as `keytool` but has a nice GUI to work with.## Server Administration*   [RDC Manager][3] - Free If you are in a Windows-heavy environment, this tools is a great way to manage all of your servers and remote connections. RDC Manager easily organizes all of your servers into groups, lets you connect to multiple RDC sessions, and saves your login credentials.*   [mRemoteNG][4] - Free remote desktop tool that supports both RDP and PuTTy SSH connections.*   [Beyond Compare][5] = $30 or $50 for Pro Beyond Compare is the best file and directory compare utility. It is incredibly fast for comparing two folder together, changing what differences you see, easily compares complex files and can synchronize folders. Beyond Compare is also scriptable, so you can take advantage of it's features on the command line.## Development*   [SublimeText][6] - Free to Try, $70 SublimeText is my favorite text editor. There are many editors to choose from, and I've tried lots, but I keep coming back to SublimeText. SublimeText has lots of plug-ins for editing and syntax highlighting, and is very responsive with large files. [Package Control][7] is a plug-in manager for SublimeText that makes it easy to install new plug-ins. Install Package Control when you open Sublime Text for the first time.*   [Programmer's File Editor][8] - Free PFE has almost no modern features, but it does one thing well: it opens very large text files without any issues. Do you have 1GB trace file that needs to be searched? Use PFE.*   [SQR Express][9] - $149 SQR Express is a great editor for SQR programs. The ability to run the program within the editor is wonderful and it has useful tools for writing SQR programs.*   [TraceMagic][10] - Free TraceMagic simplifies much of the information in `.tracesql` files. TraceMagic will group SQL statements, show you all the tables in the FROM clause, tables that are being Updated or Inserted. It is much easier to find the errors using TraceMagic. You will need an Oracle Support account to download; search for Doc ID `1470578.1`.*   [SQL Developer][11] - Free SQL Developer has really improved in the latest versions and I enjoy using it more than Toad. It's a great SQL tool when working on Oracle databases. Not much else to say, it's a solid tool.*   [PSChrome Extension][12] - Free For Chrome only, but this extension has features to make working in PeopleSoft easier. I really like the Auto-Refresh on the Process Scheduler page and the Field Information mode. The Auto-Refresh will select the Refresh button on the Process Scheduler page at an interval you want. It's a simple way to watch what is happening on the scheduler. The Field Information mode will let you click on any text box, button, or label on a page and it gives you the record and field name. That saves a trip to App Designer.*   [DataDumper Application Class][13] - Free The DataDumper application class let's you dump the structure and content of a PeopleCode object to file. You can even email the output so you don't have find it on the server. Import the `CHG_DataDumper` class and away you go. There is even a [great overview video on how to use the application class][14].## Documentation*   [Instiki][15] - Free I have found that wiki is the best way to keep documentation as a PS Admin. Instiki is a very simple wiki that makes it easy to create pages, link topics, and reduces the amount of work to keep documentation up-to-date. It is a light-weight wiki based on Ruby on Rails which makes it easy to run on any server.*   [Confluence](https://www.atlassian.com/software/confluence) - A cheap and powerful tool for team documentation.*   [Trello](https://trello.com/) - Trello is a Kanban board that is great for managing lists.*   [Slack][16] - Free for small teams        Slack is essentially IRC, but web-based and app-based with better features. I love using it with remote teams because it replaces the hallway discussions and creates better communication within teams. [1]: http://www.pwsafe.org [2]: http://keystore-explorer.sourceforge.net [3]: http://www.microsoft.com/en-us/download/details.aspx?id=44989 [4]: https://github.com/mRemoteNG/mRemoteNG [5]: http://www.scootersoftware.com [6]: http://www.sublimetext.com [7]: https://packagecontrol.io/installation#st3 [8]: http://www.lancaster.ac.uk/~steveb/cpaap/pfe/pfefiles.htm [9]: http://www.bcstools.com [10]: http://support.oracle.com [11]: http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html [12]: https://chrome.google.com/webstore/detail/pschrome/cpgoncheakfjhldfbebekijoeaabnfeb?hl=en [13]: http://www.cedarhillsgroup.com/training-videos/peoplecode-debugging-with-the-datadumper [14]: http://www.cedarhillsgroup.com/knowledge-base/kbarticles/introduction-to-the-datadumper-logger [15]: https://github.com/parasew/instiki [16]: https://slack.com",
+        "url": "/posts/getting_started/tools/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-admin-windows-services": {
+        "title": "Windows Services",
+        "content": "## Start/Stop ServicesThe built-in cmdlets are great for starting and stopping a group of services. If you have Powershell Remoting enabled, you can use the `-computername` parameter to pass in a server or list of servers to execute the command remotely.*Start*```powershellget-service -name psft* -computername  | start-service```*Stop*```powershellget-service -name psft* -computername  | stop-service```## Delete ServicesSince there is no `delete-service` cmdlet, use this command to delete services by name. For each service that contains \"psft\", loop through the services and delete them.```powershellGet-WmiObject -Class Win32_Service -Filter \"name like 'Psft%'\" | % { $_.delete() }```You can also drop into a Command Prompt and use `sc` to delete a service.```powershellcmd /c sc delete PsftAppServerDomainAPPDOMService```",
+        "url": "/posts/admin/windows_services/"
+      }
+      
+      ,
+    
+    
+    
+      "posts-admin-wl-demo-certs": {
+        "title": "WebLogic Demo Certificates",
+        "content": "## WebLogic Demo CertificatesThe demo certificates delivered with WebLogic and used by the PIA are stored in the file:```bash$PS_CFG_HOME/webserv//security/DemoIdentity.jks```To access the keystore, you can use `keytool` which is included with the JDK:```bashkeytool -list -keytore $PS_CFG_HOME/webserv//security/DemoIdentity.jks```| Property             | Value                                                     ||----------------------|-----------------------------------------------------------|| Trust store location | `$ORACLE_HOME/bea/wlserver/server/lib/DemoTrust.jks`      || Trust store password | `DemoTrustKeyStorePassPhrase`                             || Key store location   | `$PS_CFG_HOME/webserv//security/DemoIdentity.jks` || Key store password   | `DemoIdentityKeyStorePassPhrase`                          || Private key password | `DemoIdentityPassPhrase`                                  |> This information is from [G's Blog](http://kingsfleet.blogspot.com/2008/11/using-demoidentity-and-demotrust.html)",
+        "url": "/posts/admin/wl_demo_certs/"
+      }
+      
+      ,
+    
+    
+    
+      "redirects-json": {
+        "title": "",
+        "content": "{}",
+        "url": "/redirects.json"
+      }
+      
+      
+    
+    
+  };
+</script>
+
+<script src="/assets/javascripts/lunr.min.js"></script>
+<script src="/assets/javascripts/search.js"></script>
+
+        </div>
+      </div><!-- /#content -->
+
+    </div><!-- /.wrapper -->
+  </body>
+</html>
