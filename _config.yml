@@ -22,5 +22,6 @@ sass:
   sass_dir: assets/stylesheets
 gist:
   noscript: false
+theme: jekyll-theme-slate
 lunr_search:
   excludes: [feed.build-env-updates.xml, Rakefile, Procfile, Gemfile, config.ru, _config.yml, .travis.yml, 404.html, feed.xml, search.html]
