@@ -5,8 +5,8 @@ source 'http://rubygems.org'
 gem "middleman", "~>4.2.1"
 
 # For syntax highlighting
-gem "middleman-syntax", "~> 3.3.0"
-gem "middleman-sprockets", "~> 2.7.0"
+gem "middleman-syntax"
+gem "middleman-sprockets"
 # Plugin for middleman to generate GitHub pages
 gem 'middleman-gh-pages'
 
