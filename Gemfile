@@ -14,3 +14,5 @@ gem 'rake'
 gem 'html-proofer'#, '~> 3.0'
 gem 'jekyll-gist'
 gem 'jekyll-lunr-js-search'
+# Vuln Fix per GitHub
+gem "nokogiri", ">= 1.10.4"
