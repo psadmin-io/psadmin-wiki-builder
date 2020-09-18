@@ -10,7 +10,10 @@ gem 'rack-jekyll'
 gem 'rack-ssl-enforcer'
 gem 'puma'
 gem 'faraday'
-gem 'rake'
+gem "rake", ">= 12.3.3"
 gem 'html-proofer'#, '~> 3.0'
 gem 'jekyll-gist'
 gem 'jekyll-lunr-js-search'
+gem "activesupport", ">= 5.2.4.3"
+gem "rack", ">= 2.1.4"
+gem "kramdown", ">= 2.3.0"
