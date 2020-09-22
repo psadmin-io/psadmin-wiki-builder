@@ -11,4 +11,3 @@ node_modules
 generated-language-mapping.json
 token.md
 _posts/*
-Gemfile.lock
